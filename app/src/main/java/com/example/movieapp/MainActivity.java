@@ -1,9 +1,11 @@
 package com.example.movieapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,6 +31,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 getUse=e1.getText().toString();
                 getPass=e2.getText().toString();
+                Intent ob1=new Intent(getApplicationContext(), DashboardActivity.class);
+                if (getUse.equals("theatre")&&getPass.equals("123456"))
+                    startActivity(ob1);
+                else
+                    Toast.makeText(getApplicationContext(),"Invalid",Toast.LENGTH_LONG).show();
+
+
             }
         });
 

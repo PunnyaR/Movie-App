@@ -2,8 +2,13 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-
+    android:background="@drawable/pg"
     xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/baseline_emoji_emotions_24" />
 
     <TextView
         android:text="Username"
