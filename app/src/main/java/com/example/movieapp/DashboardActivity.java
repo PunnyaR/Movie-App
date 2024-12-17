@@ -24,6 +24,20 @@ public class DashboardActivity extends AppCompatActivity {
         b3=(Button) findViewById(R.id.vim);
         b4=(Button) findViewById(R.id.exm);
 
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ob3=new Intent(getApplicationContext(), AddmovieActivity.class);
+                startActivity(ob3);
+            }
+        });
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ob4=new Intent(getApplicationContext(), ViewmovieActivity.class);
+                startActivity(ob4);
+            }
+        });
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
